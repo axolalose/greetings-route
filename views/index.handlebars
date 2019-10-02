@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row-4">
+        <div class="head">
+            <h1>GREETINGS</h1>
+            <form action="/name" method="post">
+                <span>
+                    Name: <input type="text" id="first name" name="names" class="name">
+                </span>
+
+                <div class="radios">
+                    <span>
+                        <input type="radio" name="language" value="Xhosa">
+                        Xhosa
+                    </span>
+                    <span>
+                        <input type="radio" name="language" value="English">
+                        English
+                    </span>
+                    <span>
+                        <input type="radio" name="language" value="Afrikaans">
+                        Afrikaans
+                    </span>
+                </div>
+
+                <div class="content">
+                    <input type="submit" id="greetButton" value="greet Me!">
+                </div>
+            </form>
+        </div>
+        <div class="count"></div>
+    </div>
+    {{!-- <div class="reset">
+        <span>
+            <input type="submit" id="clear" value="Reset">
+        </span>
+    </div> --}}
+    <span class="box"> Text Area: {{name}}</span>
+
+    <div class="greetMsg">
+        <p></p>
+    </div>
+
+    <div class="reset">
+        <span>
+            <a href="/greeted"><input type="submit" id="clear" value="/Greeted"></a>
+        </span>
+    </div>
+    <div class="footer">
+
+    </div>
+    {{!-- <script src="greetings-route.js" charset="utf-8"></script> --}}
+</div>
+</div>
